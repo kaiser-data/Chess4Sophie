@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schach für meine Tochter</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .video {
+            margin: 40px 0;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video div {
+            padding: 56.25% 0 0 0;
+            position: relative;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .description {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,10 +74,9 @@
 
     <main>
         <section class="video">
-            <div style="padding:56.25% 0 0 0;position:relative;">
+            <div>
                 <iframe src="https://player.vimeo.com/video/1041952959?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                 title="Schäfermatt 1.Version"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
