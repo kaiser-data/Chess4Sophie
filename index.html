@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -31,21 +32,27 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         .video {
-            margin: 40px 0;
+            margin: 40px auto;
             max-width: 400px;
             width: 90%;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .video div {
-            padding: 177.78% 0 0 0;
+            width: 100%;
+            height: 0;
+            padding-bottom: 177.78%;
             position: relative;
         }
         .video iframe {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
             height: 100%;
             border-radius: 8px;
@@ -72,7 +79,7 @@
             margin-top: 20px;
             padding: 15px;
             text-align: center;
-            background-color: #4a4e69;
+            background-color: #7379a2;
             color: white;
             width: 100%;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
@@ -81,28 +88,27 @@
 </head>
 <body>
     <header>
-        <h1>Schach für meine Tochter</h1>
+        <h1>Schachtricks für meine Tochter</h1>
     </header>
 
     <main>
         <section class="video">
             <div>
-                <iframe src="https://player.vimeo.com/video/1041976468?badge=0" 
+                <iframe src="https://player.vimeo.com/video/1041983206?badge=0" 
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                title="Schäfermatt 1.Version"></iframe>
+                title="Schäfermatt"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
         </section>
 
         <section class="description">
             <h2>Über diese Seite</h2>
-            <p>Diese Webseite soll meiner Tochter helfen, die Grundzüge des Schachs zu lernen. 
-            Das eingebettete Video zeigt, wie man das Schäfermatt ausführt.</p>
+            <p>Dieses Video zeigt, wie man Schäfermatt setzt.</p>
         </section>
     </main>
 
     <footer>
-        <p>Erstellt mit Liebe von Papa</p>
+        <p>Erstellt von Papa</p>
     </footer>
 </body>
 </html>
